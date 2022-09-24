@@ -6,12 +6,12 @@ app = Flask(__name__)
 
 @app.route("/")
 def head():
-    return render_template("index.html", number1=34, number2=45)
+    return render_template("index.html", number1=340, number2=450)
 
 @app.route("/serdar")
 def number():
-    num1 = 23
-    num2 = 54
+    num1 = 230
+    num2 = 540
     return render_template("body.html", value1=num1, value2=num2, sum=num1+num2)
 
 
